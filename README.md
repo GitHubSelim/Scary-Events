@@ -100,6 +100,21 @@ pip install pillow pynput pycaw comtypes
 You don't need to touch the code to use the application!  
 ➡️ **Download the ready-to-use executable from the [Releases](../../releases) tab.**
 
+---
+
+### 💬 Need Help?
+
+If you have trouble:
+
+- Open an issue on GitHub
+- Or contact me at: `projects.selim@gmail.com`
+
+---
+
+> Don’t just learn it; break, fix, then reinvent it.
+
+---
+
 ## License
 
 This project is licensed under the **GNU General Public License v3.0 (GPLv3)**. 
