@@ -1,26 +1,30 @@
 <p align="center">
 <img src="./assets/ScaryEvents.png" width="400" />
-</p>v
+</p>
 
 # ScaryEvents
 
-ScaryEvents is a Python project for managing in-game jumpscares.  
-It listens for the keyboard, specifically the "-" key, projects instant visuals onto the screen, mutes the main game audio, and plays a relaxing audio (`.mp3`) file in the background.  
+**ScaryEvents is a Python project for managing in-game jumpscares.**
+
+It listens for the keyboard, specifically the `"-"` key, projects instant visuals onto the screen, mutes the main game audio (currently, it only mutes the game 'Escape the Backrooms'), and plays a relaxing audio (`.mp3`) file in the background. If you want to close the script, pressing the `ESC` key will exit the script.
 
 The project is built with a modular architecture and compiled into a standalone executable.
 
 ## 📌 Overview
 
-The project consists of **three main components**:
+The project consists of **four main components**:
 
-### 👻 Main.py
-* Mutes the system/game audio when a trigger occurs.  
+### 👻 main.py
+* Mutes the game audio when a trigger occurs.  
 * Projects visual assets over the game screen.  
 * Plays a background `.mp3` audio file simultaneously.  
 
 ### 💽 Media Loader
-* Reads images and audio dynamically from an external folder named `resimhavuzu`.  
-* Allows easy replacement of jumpscare media without editing or recompiling the code.  
+* Reads images and audio dynamically from an external folder named `ImagePool`.  
+* Allows easy replacement of jumpscare media without editing or recompiling the code.
+
+### ⿻ Screen Overlay
+* Manages the on-screen `"ONLINE"` display in the top right corner, rendering text on top of the active game window showing the script is running at that moment.
 
 ### 🚀 Standalone Executable
 * Bundled using `PyInstaller` for end-users.  
@@ -32,7 +36,7 @@ The project consists of **three main components**:
 
 ```text
 ScaryEvents/
-│   main.py                      # The entry point script that initializes the application and coordinates the other modules.
+│   main.py                      # The entry point script that initialises the application and coordinates the other modules.
 │   audio_manager.py             # Handles the muting of the main system audio and the playback of custom audio files.
 │   image_selector.py            # Dynamically chooses which visual asset to display from the directory during an event.
 │   load_image.py                # Responsible for reading and preparing the selected image files for rendering.
@@ -63,7 +67,7 @@ ScaryEvents/
   - `pycaw`   – external library (install via pip)
   - `comtypes`   – external library (install via pip)
   - `tkinter`  – standard library (GUI support; usually bundled with Python)
-  -
+  
    
   - Built-in modules: `os`, `sys`, `random` and `pygame`
 
