@@ -10,6 +10,13 @@ It listens for the keyboard, specifically the `"-"` key, projects instant visual
 
 The project is built with a modular architecture and compiled into a standalone executable.
 
+### 📖 Need help getting started?
+
+You don't need to touch the code to use the application!  
+➡️ **Download the ready-to-use executable from the [Releases](../../releases) tab.**
+
+---
+
 ## 📌 Overview
 
 The project consists of **four main components**:
@@ -95,12 +102,6 @@ pip install pillow pynput pycaw comtypes
 
 ---
 
-### 📖 Need help getting started?
-
-You don't need to touch the code to use the application!  
-➡️ **Download the ready-to-use executable from the [Releases](../../releases) tab.**
-
----
 
 ### 💬 Need Help?
 
