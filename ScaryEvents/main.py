@@ -72,9 +72,9 @@ def on_release(key):
 if __name__ == "__main__":
 
 	BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-	TARGET_GAME = "Backrooms-Win64-Shipping.exe"
-	MP3_FILE = os.path.join(BASE_DIR, "assets", "Grieg - Morning Mood(flute).mp3")
 	TOP_DIR = os.path.dirname(BASE_DIR)
+	TARGET_GAME = "Backrooms-Win64-Shipping.exe"
+	MP3_FILE = os.path.join(TOP_DIR, "assets", "Grieg - Morning Mood(flute).mp3")
 	IMAGE_DIR = os.path.join(TOP_DIR, "assets", "ImagePool")
 
 

@@ -1,6 +1,4 @@
 import tkinter as tk
-import win32gui
-import win32con
 
 def create_online_overlay(parent):
     # Ana root'a bağlı her zaman üstte duracak yeni bir pencere
@@ -10,7 +8,7 @@ def create_online_overlay(parent):
 
     # Arkaplanı siyah yap ve siyahı Windows şeffaflık rengi olarak belirle
     overlay.config(bg="black")
-    overlay.attributes("-transparentcolor", "black")
+    # overlay.attributes("-transparentcolor", "black")
 
     # Ekranın sağ üst köşesine sabitleme
     ekran_genisligi = overlay.winfo_screenwidth()
@@ -22,10 +20,5 @@ def create_online_overlay(parent):
 
     # Ekran güncellenmeden win32gui pencereyi bulamaz
     overlay.update()
-
-    # Tıklamaların yazının içinden oyuna geçmesini sağlayan pywin32 müdahalesi
-    hwnd = win32gui.GetParent(overlay.winfo_id())
-    ex_style = win32gui.GetWindowLong(hwnd, win32con.GWL_EXSTYLE)
-    win32gui.SetWindowLong(hwnd, win32con.GWL_EXSTYLE, ex_style | win32con.WS_EX_TRANSPARENT | win32con.WS_EX_LAYERED)
 
     return overlay
