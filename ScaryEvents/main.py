@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
 	BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 	TOP_DIR = os.path.dirname(BASE_DIR)
-	TARGET_GAME = "Backrooms-Win64-Shipping.exe"
+	TARGET_GAME = "Firefox"
 	MP3_FILE = os.path.join(TOP_DIR, "assets", "Grieg - Morning Mood(flute).mp3")
 	IMAGE_DIR = os.path.join(TOP_DIR, "assets", "ImagePool")
 
