@@ -74,7 +74,8 @@ if __name__ == "__main__":
 	BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 	TARGET_GAME = "Backrooms-Win64-Shipping.exe"
 	MP3_FILE = os.path.join(BASE_DIR, "assets", "Grieg - Morning Mood(flute).mp3")
-	IMAGE_DIR = os.path.join(BASE_DIR, "assets", "ImagePool")
+	TOP_DIR = os.path.dirname(BASE_DIR)
+	IMAGE_DIR = os.path.join(TOP_DIR, "assets", "ImagePool")
 
 
 	# Oranlar toplamı 100 olacak şekilde ayarlanmıştır. Örneğin, "Bait.png" %5, "ChillDog.png" %20, "ListeningMonkey.png" %20, "RelaxedDog.png" %20 ve "YouHaveBeenSaved.png" %35 oranlarına sahiptir.
