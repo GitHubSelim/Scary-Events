@@ -17,7 +17,8 @@ from image_selector import pick_random_image
 def rescue_mission():
 	print("You have been saved!")
 	
-	set_game_mute(TARGET_GAME, 1)
+	for game in TARGET_GAME:
+		set_game_mute(game, 1)
 	try:
 		pygame.mixer.music.load(MP3_FILE)
 		pygame.mixer.music.play(-1)
@@ -38,7 +39,10 @@ def end_mission():
 	print("Ending mission.")
 	
 	pygame.mixer.music.stop()
-	set_game_mute(TARGET_GAME, 0)
+
+	for game in TARGET_GAME:
+		set_game_mute(game, 0)
+		
 	root.withdraw()
 
 ##############################################################
@@ -46,7 +50,9 @@ def end_mission():
 def quit_program():
 	print("Program kapandi.")
 	
-	set_game_mute(TARGET_GAME, 0)
+	for game in TARGET_GAME:
+		set_game_mute(game, 0)
+
 	pygame.mixer.music.stop()
 	root.quit()
 	root.destroy()
@@ -73,10 +79,21 @@ if __name__ == "__main__":
 
 	BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 	TOP_DIR = os.path.dirname(BASE_DIR)
-	TARGET_GAME = "Backrooms-Win64-Shipping.exe"
+
 	MP3_FILE = os.path.join(TOP_DIR, "assets", "Grieg - Morning Mood(flute).mp3")
 	IMAGE_DIR = os.path.join(TOP_DIR, "assets", "ImagePool")
 
+	PROCESSES_DIR = os.path.join(TOP_DIR, "assets", "processes.txt")
+	TARGET_GAME = []
+
+	if os.path.exists(PROCESSES_DIR) and os.path.isfile(PROCESSES_DIR):
+		with open(PROCESSES_DIR, "r", encoding='utf-8') as f:
+			for line in f:
+				TARGET_GAME.append(line.strip())
+
+	else:
+		print("No such file as 'processes.txt' found in the assets directory. Using default target game.")
+		TARGET_GAME = ["Backrooms-Win64-Shipping.exe"]
 
 	# Oranlar toplamı 100 olacak şekilde ayarlanmıştır. Örneğin, "Bait.png" %5, "ChillDog.png" %20, "ListeningMonkey.png" %20, "RelaxedDog.png" %20 ve "YouHaveBeenSaved.png" %35 oranlarına sahiptir.
 	IMAGE_WEIGHTS = {
