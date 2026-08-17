@@ -88,12 +88,18 @@ if __name__ == "__main__":
 
 	if os.path.exists(PROCESSES_DIR) and os.path.isfile(PROCESSES_DIR):
 		with open(PROCESSES_DIR, "r", encoding='utf-8') as f:
+			print("Reading processes file")
 			for line in f:
 				TARGET_GAME.append(line.strip())
+				print(f"Read {line.strip()}")
 
 	else:
-		print("No such file as 'processes.txt' found in the assets directory. Using default target game.")
+		with open(PROCESSES_DIR, "w", encoding="utf-8") as f:
+			f.write("Backrooms-Win64-Shipping.exe")
+			print("Created processes file")
+
 		TARGET_GAME = ["Backrooms-Win64-Shipping.exe"]
+		print("Using default game")
 
 	# Oranlar toplamı 100 olacak şekilde ayarlanmıştır. Örneğin, "Bait.png" %5, "ChillDog.png" %20, "ListeningMonkey.png" %20, "RelaxedDog.png" %20 ve "YouHaveBeenSaved.png" %35 oranlarına sahiptir.
 	IMAGE_WEIGHTS = {
