@@ -6,7 +6,7 @@
 
 **ScaryEvents is a Python project for managing in-game jumpscares.**
 
-It listens for the keyboard, specifically the `"-"` key, projects instant visuals onto the screen, mutes the main game audio (currently, it only mutes the game 'Escape the Backrooms'), and plays a relaxing audio (`.mp3`) file in the background. If you want to close the script, pressing the `ESC` key will exit the script.
+It listens for the keyboard, specifically the `"-"` key, projects instant visuals onto the screen, mutes the main game audio, and plays a relaxing audio (`.mp3`) file in the background. If you want to close the script, pressing the `ESC` key will exit the script.
 
 The project is built with a modular architecture and compiled into a standalone executable.
 
