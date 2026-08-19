@@ -15,6 +15,8 @@ The project is built with a modular architecture and compiled into a standalone 
 You don't need to touch the code to use the application!  
 ➡️ **Download the ready-to-use executable from the [Releases](../../releases) tab.**
 
+Or [GETTING_STARTED.md](GETTING_STARTED.md)
+
 ---
 
 ## 📌 Overview

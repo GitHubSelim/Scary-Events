@@ -2,7 +2,7 @@
 
 ## ScaryEvents - Setup Guide 💡
 
-Welcome, this guide will walk you through running the **ScaryEvents** project step-by-step. Even if you're new to Python or programming. No experience needed.
+Welcome, this guide will walk you through running the **ScaryEvents** project step-by-step. Even if you're new to Python or programming. No experience needed. The exe's on the releases page are the exact copy of the code. So changing the app which gets muted could be done with the same instructions.
 
 ---
 
