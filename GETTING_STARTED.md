@@ -2,11 +2,11 @@
 
 ## ScaryEvents - Setup Guide 💡
 
-Welcome, this guide will walk you through running the **ScaryEvents** project step-by-step. Even if you're new to Python or programming. No experience needed. The exe's on the releases page are the exact copy of the code. So changing the app which gets muted could be done with the same instructions.
+Welcome, this guide will walk you through running the **ScaryEvents** project step-by-step. Even if you're new to Python or programming. No experience needed. The exe's on the releases page are exact copies of the code. So changing the app which gets muted could be done with the same instructions.
 
 ---
 
-[🔀Changing the app that gets muted](#changing-the-app-that-gets-muted)
+[🔀Changing the app that gets muted](#-changing-the-app-that-gets-muted)
 
 ###  1. Download the Project ZIP
 
@@ -36,7 +36,7 @@ cd ScaryEvents
 2. Download **Python 3.7** or higher
 3.  On the installer screen, make sure to **check** the box:\
     “Add Python to PATH”
-4. Finish the install
+4. Finish the installation
 
 ---
 
@@ -68,10 +68,10 @@ This will wait for you to press the `"-" key`
 python main.py
 ```
 
-2. Wait until an **Online** text pops on upper-right corner of your screen. This means the script has finished loading.
-3. The program waits for `"-" key` → then it displays a random image ,selected from ImagePool, on top of your current screen.
-4. To close the image just press `Enter`
-5. Exit the script by pressing to the `ESC` key.
+2. Wait until an **Online** text pops up in the upper-right corner of your screen. This means the script has finished loading.
+3. The program waits for the`"-" key` → then it displays a random image, selected from ImagePool, on top of your current screen.
+4. To close the image, just press `Enter`
+5. Exit the script by pressing the `ESC` key.
 
 
 >The script never exits until you press the `ESC` key. So you can avoid multiple jumpscares by pressing the "-" key.
@@ -83,11 +83,11 @@ python main.py
 
 
 When you run main.py, a folder named "assets" gets created if there isn't one. 
-Inside it you should see a txt file named: "processes.txt".
+Inside it, you should see a text file named "processes.txt".
 
 
 
-1. After you found the txt file, you should write the process names of the apps that you want to mute into the text file.
+1. After you find the text file, you should write the process names of the apps that you want to mute into the text file.
     >Usually the process names are the "name of the app" + ".exe". 
     >>For instance, chrome.exe, brave.exe
 
@@ -99,7 +99,7 @@ Inside it you should see a txt file named: "processes.txt".
     ```
     You can find the process names by opening the Task Manager on Windows and opening the tab named "Processes".
 
-2. Finally save the text file.
+2. Finally, save the text file.
 
 
 - Note: If you don't change the processes.txt file, the default game that gets muted is Escape the Backrooms -not affiliated-.
@@ -110,8 +110,8 @@ Inside it you should see a txt file named: "processes.txt".
 
 You can now:
 
-- Peacefully listen to a music with a nice image when a jumpscare happens.
-- Be aware of the surrondings even if a jummpscare occurs. (The only apps that gets muted are the ones written in the processes.txt file)
+- Peacefully listen to music with a nice image when a jumpscare happens.
+- Be aware of the surroundings even if a jumpscare occurs. (The only apps that get muted are the ones written in the processes.txt file)
 
 ---
 
